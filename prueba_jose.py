@@ -23,7 +23,7 @@ class RegisterNewUser(unittest.TestCase):
         sleep(3)
         """
         Vamos a verificar si estamos en la parte de creación de cuenta, y eso lo podemos saber con el título que tiene la pestaña
-        assertEqual -> porque vamos a comparar una igualdad de que si el sitio tiene como nombre: CreateNew Customer Account
+        assertEqual -> porque vamos a comparar una igualdad de que si el sitio tiene como nombre: uTest - User SignUp
         """
         self.assertEqual('uTest - User SignUp', driver.title)
         sleep(2)
@@ -35,10 +35,6 @@ class RegisterNewUser(unittest.TestCase):
         day_birth_day = driver.find_element_by_css_selector('#birthDay')
         year_birth_day = driver.find_element_by_xpath('/html/body/ui-view/main/section/div/div[2]/div/div[2]/div/form/div[1]/div[3]/div[4]/div[2]/div/div[3]/select')
         button_next = driver.find_element_by_xpath('/html/body/ui-view/main/section/div/div[2]/div/div[2]/div/form/div[2]/a/span')
-        # news_letter_subscription = driver.find_element_by_id('is_subscribed')
-        # password = driver.find_element_by_id('password')
-        # confirm_password = driver.find_element_by_id('confirmation')
-        # submit_button = driver.find_element_by_xpath('//*[@id="form-validate"]/div[2]/button/span/span')
 
         #Vamos a verificar que esos campos estén habilitados con un assertions y lo hacemos de la siguiente manera
 
@@ -49,10 +45,7 @@ class RegisterNewUser(unittest.TestCase):
         and day_birth_day.is_enabled()
         and year_birth_day.is_enabled()
         and button_next.is_enabled()
-        # and news_letter_subscription.is_enabled()
-        # and password.is_enabled()
-        # and confirm_password.is_enabled()
-        # and submit_button.is_enabled()
+
         )
         
         # Vamos a enviar los datos a cada uno de los campos y usamos el método send_keys(value)
@@ -70,14 +63,6 @@ class RegisterNewUser(unittest.TestCase):
         sleep(2)
         button_next.click()
         sleep(3)
-        # news_letter_subscription.send_keys('Test')
-        # sleep(2)
-        # password.send_keys('Test')
-        # sleep(2)
-        # confirm_password.send_keys('Test')
-        # sleep(2)
-        # submit_button.click()
-        # sleep(2)
     
     def tearDown(self):
         self.driver.implicitly_wait(3)
