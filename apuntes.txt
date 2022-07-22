@@ -1,0 +1,215 @@
+POM: Model page object
+Objeto de página modelo
+
+Poo:
+    - Abstracción
+    - Herencia
+    - Encapsulamiento
+    - Polimorfismo
+
+Principios SOLID:
+    - SRP: Principio de responsabilidad única
+    - OCP: Principio abierto-cerrado
+    - LSP: Principio de substitución de Liskov
+    - ISP: Principio segregación de interfaces
+    - DSI: Principio inversión de dependencia
+
+Modelado página facebook:
+    - Botón de opciones
+    - Búsqueda
+    - Perfil
+    - Amigos
+    - Solicitudes
+    - Eventos
+    - Mensajes
+    - En el centro de la página hay un panel que corresponde a Noticias
+    - Post
+    - Qué estás pensando
+
+En esta página podemos realizar las siguientes cosas tales como:
+    - Dar Like's
+    - Agregar amigos
+    - Grupos
+    - Juegos
+    - Aplicaciones
+    - Además de encontrar publicidad
+
+Modificar es la clave, y qué nos dice la "O" Principio abierto-cerrado
+Tenemos que estár cerrados a modificaciones, ya que en realidad la página con todas las funciones
+que tenía no cambiaron, es decir, no se modificaron, si no que por el contrario lo que pasó fue 
+que se agregó una nueva función, entonces tenemos que estár abierto a extensiones
+
+Modificar NO
+Extender SI
+
+En ocasiones se consideran alternativas, tales como realizar page por componentes y no de 
+la página completa, esto es de libre alberdrío de acuerdo al desarrollador, pero no es que el patrón
+POM nos guíe a hacerlo así, el patrón guía a modelar la página y por más que se sectorice nos van a 
+quedar con muchas responsabilidades las cosas ya que son muchos módulos que podemos sacar de una página
+
+Por ejemplo un page para el panel central va tener muchas responsabilidades como lo son:
+    - Realizar Post
+    - Hacer like
+    - Comentar
+    - Realizar scroll, etc.
+
+Cuando trabajamos con POM incumplimos de SOLID la S y O
+
+Trabajar en términos de páginas no es muy bueno
+
+ScreenPlay es una evolución del model POM, que cambia el paradigma un poco
+
+ScreenPlay
+Serenity BDD Layers
+    - Features + Runner:
+        - features en cucumber
+    - Step definitions
+        - Traducción de feature a código Java
+POM: Page object model
+    - Tasks
+        - Acciones de alto nivel
+            - Se caracteriza porque no habla en terminos de click o select, es simplemente un verbo amplio
+                ejemplo: Login, Comprar, Buscar, entre otros
+
+            No podemos seguir pensando en términos de interfaz de usuario(click, select, etc)
+            Hay que pensar en términos de tareas. Por ejemplo la tarea "Login" para ejecutarse requiere
+            de algunas interacciones, las cuales son:
+
+            - Ingresar "User"
+            - Ingresar "Password"
+            - Click en botón "Ingresar"
+        
+        Por eso las tareas e interacciones están interrelacionadas
+
+        - Son un grupo de acciones
+    - Interactions
+        - Las tareas están compuestas de interacciones
+        - Es donde decimos click, select, etc
+    - Questions
+        - Asserts
+        - Hacemos los asserts
+    - User interface
+        - Mapeo de interfaz
+        - Vamos a colocar solo el mapeo de los objetos con TARGET
+
+Lo que se logra con una arquitectura como estas es la abstracción, que es lo más importante en la
+programación orientada a objetos, y esta abstracción se visualiza ya que cada cosa tiene su única
+responsabilidad.
+
+Se debe pensar en términos de tareas y no de interfaz de usuario
+
+- Capa Model:
+    Colocamos objetos de negocio(clase Persona, clase Tarjeta de crédito, clase Transacción, es decir,
+    debemos crear objetos o entes, hagamos abstracción y no estemos creando métodos con 6 o más parámetros)
+
+    Es preferible lo siguiente: CalcularCredito(Persona)
+    Esto no: CalcularCredito(String nombre, String apellido, int documento)
+
+    Debemos crear POO donde su fin es crear objetos y que se comunique entre ellos
+
+- Capa util:
+    Utilidades o cosas que se usan repetidamente, ejemplo: Verificar que un campo no esté vacío
+    o nulo, realizar el Wait de 5 segundos, son cosas que usamos en muchos lugares
+
+- Capa Excepciones:
+    Es donde capturamos los motivos por los cuales puede fallar nuestra automatización pero
+    customizadas.
+    El soporte que tiene Serenity, el cual tiene mucho selenium por debajo, para excepciones
+    es muy pobre y casi siempre tiene errores por elemento no visible, TimeOut y otro.
+    Con esta capa de excepciones queremos crear unas que digan qué pasó.
+
+    ejemplo:
+        Se está trabajando en la automatización de una app y ya se validó que todo está
+        enviando correctamente desde el script a nivel de campos. Sin embargo, al dar Click
+        para finalizar este registro se presenta un fallo, ¿Por qué podría fallar un registro? 
+
+        Podría fallar porque:
+            - El usuario ya existe
+            - El correo ya existe
+
+        Estos serían errores que no son propios de la automatización, es un error del dato
+        que se está enviando y se da por el funcionamiento natural de la ejecución.
+        Estas podrían ser excepciones y podríamos llamar por ejemplo:
+            - UserAlreadyExists
+        Esto es la capa de excepciones y es propia de cada proyecto y al mismo tiempo es personalizable
+        
+Convenciones para realizar codificación limpia y estructurada:
+    - Paquetes
+        Minúsculas
+    - Clases
+        CamelCaseUp
+    - Variables/Métodos
+        camelCaseDown
+    - Constantes
+        ESTO_ES_UNA_CONSTANTE
+    - Features
+        soy_un_feature.feature
+    Comentarios
+        evitar al máximo los comentarios
+
+Capítulo 3
+
+Primeros pasos con el patrón ScreenPlay.
+    - Saber hacer
+        - Tasks(tareas)
+        - Questions(preguntas)
+
+        - Sobre
+            UI(interfaz de usuario)
+
+Saber hacer tareas, preguntas sobre interfaz de usuario
+
+ejemplo historia de usuario
+    - Persona que abre un navegador, entra a la página de Choucair Academy,
+    escoge de categorias Universidad Choucair, busca cursos "Recursos Automatización Bancolombia"
+    y verifica que el título de la página sea "Recursos Automatización Bancolombia"
+
+La idea es que nuestra historia de usuario se escriba en un solo idioma, es decir, toda en inglés
+o toda en español, no se debe mezclar distintos idiomas en la misma.
+Para que se reconozca un idioma diferente al inglés deberíamos colocar en los tag iniciales
+lo siguiente:
+    - # language:es
+Con esto determinamos que la feature es Español
+Hacer nuestra feature en inglés es lo más recomendado por buenas prácticas
+Al iniciar con la etiqueta #Autor, sirve para dejar como comentario la persona que realiza la
+feature, aunque esa parte no sea obligatoria
+
+Para generar los métodos que se requieren colocar en nuestra clase StepDefinition parametrizamos
+nuestra clase "RunnerTags" que se encuentra en la ruta "src/test/resource/features/academyChoucair.feature"
+
+Capítulo 4
+
+Aprenderemos como interactúa el actor con las tareas(tasks) sobre la interfaz de usuario(UI)
+para el desarrollo de cada paso descrito en la historia de usuario
+
+onStage.theActorCalled("Lionel Messi").wasAbleTo(OpenUp.thePage());
+onStage.theActorCalled("Lionel Messi").wasAbleTo(Launch.youtubeHomePage());
+onStage.theActorCalled("Lionel Messi").wasAbleTo(Search.yourFavoriteSong());
+onStage.theActorCalled("Lionel Messi").wasAbleTo(Login.withCredentials(username, password));
+
+
+Capítulo 5
+
+Aprenderemos cómo identificar los objetos en nuestro page y crearemos una nueva tarea
+
+
+Se puede identificar los objetos por id, name, class, xpath, entre otros
+
+Capítulo 6
+
+Una vez hayamos realizado nuestras tareas anteriores, terminaremos realizando la verificación
+de que toda nuestra historia de usuario salió conforme a lo esperado. En esta guía buscarémos darle
+implementación a la siguiente instrucción en nuestra historia de usuario
+
+Capítulo 6.1
+
+# Autor: José Luis García
+  @stories
+  Feature: Academy Choucair
+    As a user, I want to learn how to automate in screamplay at the Choucair
+    Academy with the automation course
+    @scenario1
+    Scenario: Search for a automation course
+      Given than Messi wants to learn automation at the academy Choucair
+      When  he search for the course Recursos Automatización Bancolombia on the choucair academy plataform
+      Then he finds the course called resources Recursos Automatización Bancolombia
