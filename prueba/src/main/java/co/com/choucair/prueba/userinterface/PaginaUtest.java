@@ -7,6 +7,6 @@ import org.openqa.selenium.By;
 
 @DefaultUrl("https://www.utest.com/")
 public class PaginaUtest extends PageObject{
-    public static final Target JOIN = Target.the("Botón para iniciar el registro")
+    public static final Target JOIN = Target.the("Boton para iniciar el registro")
         .located(By.xpath("//a[@class='unauthenticated-nav-bar__dropdown-menu-sign-up']"));
 }

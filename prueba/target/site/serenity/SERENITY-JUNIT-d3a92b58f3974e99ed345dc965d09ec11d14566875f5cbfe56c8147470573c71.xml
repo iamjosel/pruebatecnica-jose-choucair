@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Registro de nuevo usuario en Utest" skipped="0" tests="1" time="0.78" timestamp="2022-07-22 09:49:43"><testcase name="Registro de Jose en plataforma Utest"><error type="java.lang.NullPointerException"/><system-err>null&#13;
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Registro de nuevo usuario en Utest" skipped="0" tests="1" time="0.72" timestamp="2022-07-23 07:50:25"><testcase name="Registro de Jose en plataforma Utest"><error type="java.lang.NullPointerException"/><system-err>null&#13;
 co.com.prueba.jose.stepdefinitions.StepDefinitions.joseEsperarAprenderMuchoDePruebasDeSoftware(StepDefinitions.java:27)&#13;
 ✽.Jose esperar aprender mucho de pruebas de software(src/test/resources/features/registroUtest.feature:6)&#13;
 </system-err></testcase></testsuite>

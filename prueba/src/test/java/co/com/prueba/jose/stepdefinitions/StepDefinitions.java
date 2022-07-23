@@ -3,6 +3,7 @@ package co.com.prueba.jose.stepdefinitions;
 import co.com.choucair.prueba.model.UtestDatos;
 import co.com.choucair.prueba.tasks.Abrir;
 import co.com.choucair.prueba.tasks.Llenar;
+import co.com.choucair.prueba.tasks.LlenarDireccion;
 import org.junit.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.When;
@@ -18,7 +19,6 @@ public class StepDefinitions {
 
     @Before
     public void setStage(){
-
         OnStage.setTheStage(new OnlineCast());
     }
 
@@ -30,7 +30,7 @@ public class StepDefinitions {
 
     @When("^Completara el formulario completo con sus datos$")
     public void completaraElFormularioCompletoConSusDatos(List<UtestDatos> datos) throws Exception {
-        OnStage.theActorInTheSpotlight().attemptsTo(Llenar.laPagina(datos));
+        OnStage.theActorInTheSpotlight().attemptsTo(Llenar.laPagina(datos), LlenarDireccion.laPagina(datos));
     }
 
     @Then("^Finaliza el registro al completar los formularios$")

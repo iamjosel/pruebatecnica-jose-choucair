@@ -7,6 +7,9 @@ public class UtestDatos {
     private String strMesNacimiento;
     private String strDiaNacimiento;
     private String strAnioNacimiento;
+    private String strCiudad;
+    private String strZip;
+    private String strPais;
 
     public String getStrNombre() {
         return strNombre;
@@ -52,7 +55,32 @@ public class UtestDatos {
         return strAnioNacimiento;
     }
 
+    public String getStrCiudad() {
+        return strCiudad;
+    }
+
+    public void setStrCiudad(String strCiudad) {
+        this.strCiudad = strCiudad;
+    }
+
+    public String getStrZip() {
+        return strZip;
+    }
+
+    public void setStrZip(String strZip) {
+        this.strZip = strZip;
+    }
+
+    public String getStrPais() {
+        return strPais;
+    }
+
+    public void setStrPais(String strPais) {
+        this.strPais = strPais;
+    }
+
     public void setStrAnioNacimiento(String strAnioNacimiento) {
         this.strAnioNacimiento = strAnioNacimiento;
+
     }
 }

@@ -25,13 +25,13 @@ public class Llenar implements Task {
 
     @Override
     public <T extends Actor> void performAs(T actor){
-        actor.attemptsTo(Enter.theValue(datos.get(0).getStrNombre()).into(NOMRE),
-                Enter.theValue(datos.get(0).getStrApellido()).into(APELLIDO),
-                Enter.theValue(datos.get(0).getStrEmail()).into(EMAIL),
-                SelectFromOptions.byVisibleText(datos.get(0).getStrMesNacimiento()).from(MES_NACIMIENTO),
-                SelectFromOptions.byVisibleText(datos.get(0).getStrDiaNacimiento()).from(DIA_NACIMIENTO),
-                SelectFromOptions.byVisibleText(datos.get(0).getStrAnioNacimiento()).from(ANIO_NACIMIENTO),
-                Click.on(BOTON)
+        actor.attemptsTo(Enter.theValue(datos.get(0).getStrNombre()).into(PaginaPersonal.NOMBRE),
+                Enter.theValue(datos.get(0).getStrApellido()).into(PaginaPersonal.APELLIDO),
+                Enter.theValue(datos.get(0).getStrEmail()).into(PaginaPersonal.EMAIL),
+                SelectFromOptions.byVisibleText(datos.get(0).getStrMesNacimiento()).from(PaginaPersonal.MES_NACIMIENTO),
+                SelectFromOptions.byVisibleText(datos.get(0).getStrDiaNacimiento()).from(PaginaPersonal.DIA_NACIMIENTO),
+                SelectFromOptions.byVisibleText(datos.get(0).getStrAnioNacimiento()).from(PaginaPersonal.ANIO_NACIMIENTO),
+                Click.on(PaginaPersonal.BOTON)
                 );
     }
 }
