@@ -13,7 +13,8 @@ public class UtestDatos {
     private String strDispositivoMovil;
     private String strModeloMovil;
     private String strSistemaOperativoMovil;
-
+    private String strClave;
+    private String strTextoFinal;
 
     public String getStrNombre() {
         return strNombre;
@@ -105,6 +106,22 @@ public class UtestDatos {
 
     public void setStrSistemaOperativoMovil(String strSistemaOperativoMovil) {
         this.strSistemaOperativoMovil = strSistemaOperativoMovil;
+    }
+
+    public String getStrClave() {
+        return strClave;
+    }
+
+    public void setStrClave(String strClave) {
+        this.strClave = strClave;
+    }
+
+    public String getStrTextoFinal() {
+        return strTextoFinal;
+    }
+
+    public void setStrTextoFinal(String strTextoFinal) {
+        this.strTextoFinal = strTextoFinal;
     }
 
     public void setStrAnioNacimiento(String strAnioNacimiento) {
