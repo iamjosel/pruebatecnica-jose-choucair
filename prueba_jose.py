@@ -20,13 +20,12 @@ class RegisterNewUser(unittest.TestCase):
         driver = self.driver
         driver.find_element_by_xpath('/html/body/ui-view/unauthenticated-container/div/div/unauthenticated-header/div/div[5]/ul/li[6]/a')
         driver.find_element_by_link_text('Join Today').click()
-        sleep(3)
+        sleep(2)
         """
         Vamos a verificar si estamos en la parte de creación de cuenta, y eso lo podemos saber con el título que tiene la pestaña
         assertEqual -> porque vamos a comparar una igualdad de que si el sitio tiene como nombre: uTest - User SignUp
         """
         self.assertEqual('uTest - User SignUp', driver.title)
-        sleep(2)
 
         first_name = driver.find_element_by_id('firstName')
         last_name = driver.find_element_by_id('lastName')
@@ -50,22 +49,22 @@ class RegisterNewUser(unittest.TestCase):
         
         # Vamos a enviar los datos a cada uno de los campos y usamos el método send_keys(value)
         first_name.send_keys('Test Jose')
-        sleep(2)
+        sleep(1)
         last_name.send_keys('Test Dev')
-        sleep(2)
+        sleep(1)
         email_address.send_keys('Testdev@gmail.com')
-        sleep(2)
+        sleep(1)
         month_birth_day.send_keys('December')
-        sleep(2)
+        sleep(1)
         day_birth_day.send_keys(30)
-        sleep(2)
+        sleep(1)
         year_birth_day.send_keys(1995)
-        sleep(2)
+        sleep(1)
         button_next.click()
-        sleep(3)
+        sleep(2)
     
     def tearDown(self):
-        self.driver.implicitly_wait(3)
+        self.driver.implicitly_wait(20)
         self.driver.close()
 
 if __name__ == '__main__':

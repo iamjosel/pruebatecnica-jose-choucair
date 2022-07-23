@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Registro de nuevo usuario en Utest" tests="1" skipped="0" failures="1" errors="0" timestamp="2022-07-23T16:50:10" hostname="DESKTOP-OPNS9OF" time="0.97">
+<testsuite name="Registro de nuevo usuario en Utest" tests="1" skipped="0" failures="1" errors="0" timestamp="2022-07-23T20:14:07" hostname="DESKTOP-OPNS9OF" time="1.959">
   <properties/>
-  <testcase name="Registro de Jose en plataforma Utest" classname="Registro de nuevo usuario en Utest" time="0.97">
+  <testcase name="Registro de Jose en plataforma Utest" classname="Registro de nuevo usuario en Utest" time="1.959">
     <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
 	at net.serenitybdd.screenplay.actors.OnStage.anActorIsOnStage(OnStage.java:41)
 	at net.serenitybdd.screenplay.actors.OnStage.theActorCalled(OnStage.java:32)
@@ -10,9 +10,9 @@
 </failure>
   </testcase>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@1a3839c8
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@119cfdd8
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@407e7aa7
+  <system-err><![CDATA[[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@2c4aaeee
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@255a8339
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@5404f933
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - testFinished: Registro de Jose en plataforma Utest:Given Jose esperar aprender mucho de pruebas de software, When Completara el formulario completo con sus datos
 | strNombre | strApellido | strEmail | strMesNacimiento | strDiaNacimiento | strAnioNacimiento | strCiudad | strZip | strPais | DispositivoMovil | strModeloMovil | strSistemaOperativoMovil | strClave |
 | Lionel | Messi | messi@gmail.com | December | 14 | 1987 | Bogota | 1947 | Colombia | Apple | iPhone 5S | iOS 10.11 | Pepe123 |, Then Finaliza el registro al completar los formularios
