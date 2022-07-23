@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Registro de nuevo usuario en Utest" tests="1" skipped="0" failures="1" errors="0" timestamp="2022-07-23T12:50:25" hostname="DESKTOP-OPNS9OF" time="0.696">
+<testsuite name="Registro de nuevo usuario en Utest" tests="1" skipped="0" failures="1" errors="0" timestamp="2022-07-23T14:30:23" hostname="DESKTOP-OPNS9OF" time="0.755">
   <properties/>
-  <testcase name="Registro de Jose en plataforma Utest" classname="Registro de nuevo usuario en Utest" time="0.696">
+  <testcase name="Registro de Jose en plataforma Utest" classname="Registro de nuevo usuario en Utest" time="0.755">
     <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
 	at net.serenitybdd.screenplay.actors.OnStage.anActorIsOnStage(OnStage.java:41)
 	at net.serenitybdd.screenplay.actors.OnStage.theActorCalled(OnStage.java:32)
-	at co.com.prueba.jose.stepdefinitions.StepDefinitions.joseEsperarAprenderMuchoDePruebasDeSoftware(StepDefinitions.java:27)
+	at co.com.prueba.jose.stepdefinitions.StepDefinitions.joseEsperarAprenderMuchoDePruebasDeSoftware(StepDefinitions.java:28)
 	at ✽.Jose esperar aprender mucho de pruebas de software(src/test/resources/features/registroUtest.feature:6)
 </failure>
   </testcase>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@558c4dcd
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@1b297a93
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@3b5b7764
+  <system-err><![CDATA[[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@4e61a6cd
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@3c19f5d1
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@70c90df0
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - testFinished: Registro de Jose en plataforma Utest:Given Jose esperar aprender mucho de pruebas de software, When Completara el formulario completo con sus datos
-| strNombre | strApellido | strEmail | strMesNacimiento | strDiaNacimiento | strAnioNacimiento | strCiudad | strZip | strPais |
-| Lionel | Messi | messi@gmail.com | December | 14 | 1987 | Bogota | 1947 | Colombia |, Then Finaliza el registro al completar los formularios
+| strNombre | strApellido | strEmail | strMesNacimiento | strDiaNacimiento | strAnioNacimiento | strCiudad | strZip | strPais | DispositivoMovil | strModeloMovil | strSistemaOperativoMovil |
+| Lionel | Messi | messi@gmail.com | December | 14 | 1987 | Bogota | 1947 | Colombia | Apple | iPhone 5S | iOS 10.11 |, Then Finaliza el registro al completar los formularios
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - TestOutcomes: [Registro de Jose en plataforma Utest:Given Jose esperar aprender mucho de pruebas de software, When Completara el formulario completo con sus datos
-| strNombre | strApellido | strEmail | strMesNacimiento | strDiaNacimiento | strAnioNacimiento | strCiudad | strZip | strPais |
-| Lionel | Messi | messi@gmail.com | December | 14 | 1987 | Bogota | 1947 | Colombia |, Then Finaliza el registro al completar los formularios]
+| strNombre | strApellido | strEmail | strMesNacimiento | strDiaNacimiento | strAnioNacimiento | strCiudad | strZip | strPais | DispositivoMovil | strModeloMovil | strSistemaOperativoMovil |
+| Lionel | Messi | messi@gmail.com | December | 14 | 1987 | Bogota | 1947 | Colombia | Apple | iPhone 5S | iOS 10.11 |, Then Finaliza el registro al completar los formularios]
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - Final testOutcomes: [Registro de Jose en plataforma Utest:Given Jose esperar aprender mucho de pruebas de software, When Completara el formulario completo con sus datos
-| strNombre | strApellido | strEmail | strMesNacimiento | strDiaNacimiento | strAnioNacimiento | strCiudad | strZip | strPais |
-| Lionel | Messi | messi@gmail.com | December | 14 | 1987 | Bogota | 1947 | Colombia |, Then Finaliza el registro al completar los formularios]
+| strNombre | strApellido | strEmail | strMesNacimiento | strDiaNacimiento | strAnioNacimiento | strCiudad | strZip | strPais | DispositivoMovil | strModeloMovil | strSistemaOperativoMovil |
+| Lionel | Messi | messi@gmail.com | December | 14 | 1987 | Bogota | 1947 | Colombia | Apple | iPhone 5S | iOS 10.11 |, Then Finaliza el registro al completar los formularios]
 [Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - 
            __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
   _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 

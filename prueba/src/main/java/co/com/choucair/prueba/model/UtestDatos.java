@@ -10,6 +10,10 @@ public class UtestDatos {
     private String strCiudad;
     private String strZip;
     private String strPais;
+    private String strDispositivoMovil;
+    private String strModeloMovil;
+    private String strSistemaOperativoMovil;
+
 
     public String getStrNombre() {
         return strNombre;
@@ -77,6 +81,30 @@ public class UtestDatos {
 
     public void setStrPais(String strPais) {
         this.strPais = strPais;
+    }
+
+    public String getStrDispositivoMovil() {
+        return strDispositivoMovil;
+    }
+
+    public void setStrDispositivoMovil(String strDispositivoMovil) {
+        this.strDispositivoMovil = strDispositivoMovil;
+    }
+
+    public String getStrModeloMovil() {
+        return strModeloMovil;
+    }
+
+    public void setStrModeloMovil(String strModeloMovil) {
+        this.strModeloMovil = strModeloMovil;
+    }
+
+    public String getStrSistemaOperativoMovil() {
+        return strSistemaOperativoMovil;
+    }
+
+    public void setStrSistemaOperativoMovil(String strSistemaOperativoMovil) {
+        this.strSistemaOperativoMovil = strSistemaOperativoMovil;
     }
 
     public void setStrAnioNacimiento(String strAnioNacimiento) {
