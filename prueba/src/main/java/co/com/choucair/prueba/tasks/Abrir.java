@@ -18,6 +18,5 @@ public class Abrir implements Task {
     public <T extends Actor> void performAs(T actor){
         actor.attemptsTo(Open.browserOn(pagina),
                 Click.on(PaginaUtest.JOIN));
-
     }
 }
