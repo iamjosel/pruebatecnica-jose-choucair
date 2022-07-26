@@ -3,14 +3,13 @@ package co.com.prueba.jose.stepdefinitions;
 import co.com.choucair.prueba.model.UtestDatos;
 import co.com.choucair.prueba.questions.Responder;
 import co.com.choucair.prueba.tasks.*;
-import org.junit.Before;
+import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.When;
 import cucumber.api.java.en.Then;
 import net.serenitybdd.screenplay.actors.OnlineCast;
 import net.serenitybdd.screenplay.GivenWhenThen;
 import net.serenitybdd.screenplay.actors.OnStage;
-import sun.security.util.PendingException;
 
 import java.util.List;
 
@@ -18,7 +17,7 @@ import java.util.List;
 public class StepDefinitions {
 
     @Before
-    public void setStage(){
+    public void setTheStage(){
         OnStage.setTheStage(new OnlineCast());
     }
 

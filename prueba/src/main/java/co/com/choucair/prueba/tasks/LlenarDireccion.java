@@ -34,6 +34,7 @@ public class LlenarDireccion implements Task {
         Enter.theValue(datos.get(0).getStrPais()).into(PaginaDireccion.PAIS).thenHit(Keys.ARROW_DOWN, Keys.ENTER),
         Click.on(PaginaDireccion.BOTON_DISPOSITIVOS)
         );
+        System.out.println(datos.get(0).toString());
     }
 }
 
