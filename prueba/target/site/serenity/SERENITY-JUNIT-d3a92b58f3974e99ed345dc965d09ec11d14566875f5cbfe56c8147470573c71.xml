@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Registro de nuevo usuario en Utest" skipped="0" tests="1" time="80.76" timestamp="2022-07-28 05:08:01"><testcase name="Registro de Jose en plataforma Utest"><failure message="Expected responder&#10;Expected: is &lt;true&gt;&#10;     but: was &lt;false&gt;" type="java.lang.AssertionError">Expected responder
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Registro de nuevo usuario en Utest" skipped="0" tests="1" time="84.08" timestamp="2022-07-28 06:44:42"><testcase name="Registro de Jose en plataforma Utest"><failure message="Expected responder&#10;Expected: is &lt;true&gt;&#10;     but: was &lt;false&gt;" type="java.lang.AssertionError">Expected responder
 Expected: is &lt;true&gt;
      but: was &lt;false&gt;</failure><system-err>Expected responder
 Expected: is &lt;true&gt;

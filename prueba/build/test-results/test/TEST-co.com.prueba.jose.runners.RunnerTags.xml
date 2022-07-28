@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="co.com.prueba.jose.runners.RunnerTags" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="DESKTOP-OPNS9OF" time="0.0">
   <properties/>
-  <system-out><![CDATA[REGISTER BASE STEP LISTENER net.thucydides.core.steps.BaseStepListener@69c8681
+  <system-out><![CDATA[REGISTER BASE STEP LISTENER net.thucydides.core.steps.BaseStepListener@36ca7e72
 
 ?[31mFailed scenarios:?[0m
 ?[31msrc/test/resources/features/registroUtest.feature:5 ?[0m# Registro de Jose en plataforma Utest
 
 1 Scenarios (?[31m1 failed?[0m)
 3 Steps (?[31m1 failed?[0m, ?[32m2 passed?[0m)
-1m23,841s
+1m26,036s
 
 java.lang.AssertionError: Expected responder
 Expected: is <true>
