@@ -17,7 +17,7 @@ import java.util.List;
 public class StepDefinitions {
 
     @Before
-    public void setTheStage(){
+    public void setStage(){
         OnStage.setTheStage(new OnlineCast());
     }
 

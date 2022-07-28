@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">45.722s</div>
+<div class="counter">37.139s</div>
 <p>duration</p>
 </div>
 </td>
@@ -76,177 +76,48 @@
 <a name="Registro de Jose en plataforma Utest"></a>
 <h3 class="failures">Registro de Jose en plataforma Utest</h3>
 <span class="code">
-<pre>net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException: Expected enabled element was not enabled
-	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilEnabled(WebElementFacadeImpl.java:1149)
-	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilElementAvailable(WebElementFacadeImpl.java:954)
-	at net.serenitybdd.core.pages.WebElementFacadeImpl.click(WebElementFacadeImpl.java:1229)
-	at net.serenitybdd.screenplay.actions.ClickOnTarget.performAs(ClickOnTarget.java:13)
-	at net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$zvCMwuNc.performAs$accessor$62x8VuqC(Unknown Source)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:471)
-	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:451)
-	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:424)
-	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
-	at net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$zvCMwuNc.performAs(Unknown Source)
-	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
-	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
-	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
-	at co.com.choucair.prueba.tasks.Abrir.performAs(Abrir.java:19)
-	at co.com.choucair.prueba.tasks.Abrir$ByteBuddy$D7pD1z5C.performAs$accessor$NfooWkpI(Unknown Source)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:471)
-	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:451)
-	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:424)
-	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
-	at co.com.choucair.prueba.tasks.Abrir$ByteBuddy$D7pD1z5C.performAs(Unknown Source)
-	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
-	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
-	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
-	at net.serenitybdd.screenplay.Actor.wasAbleTo(Actor.java:158)
-	at co.com.prueba.jose.stepdefinitions.StepDefinitions.joseEsperarAprenderMuchoDePruebasDeSoftware(StepDefinitions.java:26)
-	at ✽.Jose esperar aprender mucho de pruebas de software(src/test/resources/features/registroUtest.feature:6)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for By.xpath: /html/body/ui-view/unauthenticated-container/div/div/unauthenticated-header/div/div[3]/ul[2]/li[2]/a/font/font to be enabled (tried for 5 second(s) with 100 milliseconds interval)
-	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilEnabled(WebElementFacadeImpl.java:1146)
-	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilElementAvailable(WebElementFacadeImpl.java:954)
-	at net.serenitybdd.core.pages.WebElementFacadeImpl.click(WebElementFacadeImpl.java:1229)
-	at net.serenitybdd.screenplay.actions.ClickOnTarget.performAs(ClickOnTarget.java:13)
-	at net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$zvCMwuNc.performAs$accessor$62x8VuqC(Unknown Source)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:471)
-	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:451)
-	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:424)
-	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
-	at net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$zvCMwuNc.performAs(Unknown Source)
-	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
-	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
-	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
-	at co.com.choucair.prueba.tasks.Abrir.performAs(Abrir.java:19)
-	at co.com.choucair.prueba.tasks.Abrir$ByteBuddy$D7pD1z5C.performAs$accessor$NfooWkpI(Unknown Source)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:471)
-	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:451)
-	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:424)
-	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
-	at co.com.choucair.prueba.tasks.Abrir$ByteBuddy$D7pD1z5C.performAs(Unknown Source)
-	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
-	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
-	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
-	at net.serenitybdd.screenplay.Actor.wasAbleTo(Actor.java:158)
-	at co.com.prueba.jose.stepdefinitions.StepDefinitions.joseEsperarAprenderMuchoDePruebasDeSoftware(StepDefinitions.java:26)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at cucumber.runtime.Utils$1.call(Utils.java:31)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:25)
-	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:37)
-	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:40)
-	at cucumber.api.TestStep.executeStep(TestStep.java:102)
-	at cucumber.api.TestStep.run(TestStep.java:83)
-	at cucumber.api.TestCase.run(TestCase.java:58)
-	at cucumber.runner.Runner.runPickle(Runner.java:80)
-	at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:118)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:56)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:127)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
-	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
-	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:175)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:157)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/ui-view/unauthenticated-container/div/div/unauthenticated-header/div/div[3]/ul[2]/li[2]/a/font/font&quot;}
-  (Session info: chrome=103.0.5060.134)
+<pre>org.openqa.selenium.NoSuchElementException: Cannot locate element with text: 14
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-OPNS9OF', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.4'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\josel\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64293}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: b07d5b680a734dbdf49828536919302f
-*** Element info: {Using=xpath, value=/html/body/ui-view/unauthenticated-container/div/div/unauthenticated-header/div/div[3]/ul[2]/li[2]/a/font/font}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at net.thucydides.core.webdriver.WebDriverFacade.findElement(WebDriverFacade.java:222)
-	at net.serenitybdd.core.pages.WebElementResolverByLocator.resolveForDriver(WebElementResolverByLocator.java:18)
-	at net.serenitybdd.core.pages.WebElementFacadeImpl.getElement(WebElementFacadeImpl.java:221)
-	at net.serenitybdd.core.pages.WebElementExpectations$3.apply(WebElementExpectations.java:63)
-	at net.serenitybdd.core.pages.WebElementExpectations$3.apply(WebElementExpectations.java:55)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 99 more
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:147)
+	at net.serenitybdd.core.pages.DropdownSelector.byVisibleText(DropdownSelector.java:19)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.selectByVisibleText(WebElementFacadeImpl.java:918)
+	at net.serenitybdd.screenplay.actions.selectactions.SelectByVisibleTextFromTarget.performAs(SelectByVisibleTextFromTarget.java:19)
+	at net.serenitybdd.screenplay.actions.selectactions.SelectByVisibleTextFromTarget$ByteBuddy$fHuoSOGO.performAs$accessor$lecjiQar(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:471)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:451)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:424)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
+	at net.serenitybdd.screenplay.actions.selectactions.SelectByVisibleTextFromTarget$ByteBuddy$fHuoSOGO.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
+	at co.com.choucair.prueba.tasks.Llenar.performAs(Llenar.java:28)
+	at co.com.choucair.prueba.tasks.Llenar$ByteBuddy$uRpswUjT.performAs$accessor$YDNJ4PdY(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:471)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:451)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:424)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
+	at co.com.choucair.prueba.tasks.Llenar$ByteBuddy$uRpswUjT.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
+	at co.com.prueba.jose.stepdefinitions.StepDefinitions.completaraElFormularioCompletoConSusDatos(StepDefinitions.java:32)
+	at ✽.Completara el formulario completo con sus datos(src/test/resources/features/registroUtest.feature:7)
 </pre>
 </span>
 </div>
@@ -263,7 +134,7 @@ Session ID: b07d5b680a734dbdf49828536919302f
 </thead>
 <tr>
 <td class="failures">Registro de Jose en plataforma Utest</td>
-<td class="failures">45.722s</td>
+<td class="failures">37.139s</td>
 <td class="failures">failed</td>
 </tr>
 </table>
@@ -271,36 +142,57 @@ Session ID: b07d5b680a734dbdf49828536919302f
 <div id="tab2" class="tab">
 <h2>Standard error</h2>
 <span class="code">
-<pre>[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@7ef1b004
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@6dba7514
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@3d019e49
-jul. 28, 2022 3:41:12 P. M. org.openqa.selenium.remote.DesiredCapabilities chrome
+<pre>[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@5fd87d88
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@23354b87
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@3d2e5ef4
+jul. 28, 2022 4:58:36 P. M. org.openqa.selenium.remote.DesiredCapabilities chrome
 INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --start-maximized, goog:chromeOptions: {args: [--start-maximized], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
-Starting ChromeDriver 103.0.5060.134 (8ec6fce403b3feb0869b0732eda8bd95011d333c-refs/branch-heads/5060@{#1262}) on port 13832
+Starting ChromeDriver 103.0.5060.134 (8ec6fce403b3feb0869b0732eda8bd95011d333c-refs/branch-heads/5060@{#1262}) on port 12525
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-jul. 28, 2022 3:41:23 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+jul. 28, 2022 4:58:41 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: W3C
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Registro de Jose en plataforma Utest:Given Jose esperar aprender mucho de pruebas de software [Jose abrir [Jose opens the Pagina utest]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@e8168b7
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@112096c7
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@6de1a24f
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@1b3e26ab
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Registro de Jose en plataforma Utest:Given Jose esperar aprender mucho de pruebas de software [Jose abrir [Jose opens the Pagina utest, Jose clicks on Boton para iniciar el registro]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Registro de Jose en plataforma Utest:Given Jose esperar aprender mucho de pruebas de software [Jose abrir [Jose opens the Pagina utest, Jose clicks on Boton para iniciar el registro]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Registro de Jose en plataforma Utest:Given Jose esperar aprender mucho de pruebas de software [Jose abrir [Jose opens the Pagina utest, Jose clicks on Boton para iniciar el registro]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@26c574b3
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@66fbe31f
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@10c395e0
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Registro de Jose en plataforma Utest:Given Jose esperar aprender mucho de pruebas de software [Jose abrir [Jose opens the Pagina utest, Jose clicks on Boton para iniciar el registro]], When Completara el formulario completo con sus datos
+| strNombre | strApellido | strEmail | strMesNacimiento | strDiaNacimiento | strAnioNacimiento | strCiudad | strZip | strPais | strDispositivoMovil | strModeloMovil | strSistemaOperativoMovil | strClave |
+| Lionel | Messi | messi@gmail.com | December | 14 | 1987 | Bogota | 1947 | Colombia | Apple | iPhone 5S | iOS 10.11 | Pepe123 | [Jose llenar [Jose enters 'Lionel' into Nombre]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@cf36c0
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Registro de Jose en plataforma Utest:Given Jose esperar aprender mucho de pruebas de software [Jose abrir [Jose opens the Pagina utest, Jose clicks on Boton para iniciar el registro]], When Completara el formulario completo con sus datos
+| strNombre | strApellido | strEmail | strMesNacimiento | strDiaNacimiento | strAnioNacimiento | strCiudad | strZip | strPais | strDispositivoMovil | strModeloMovil | strSistemaOperativoMovil | strClave |
+| Lionel | Messi | messi@gmail.com | December | 14 | 1987 | Bogota | 1947 | Colombia | Apple | iPhone 5S | iOS 10.11 | Pepe123 | [Jose llenar [Jose enters 'Lionel' into Nombre, Jose enters 'Messi' into Apellido]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@1cead575
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Registro de Jose en plataforma Utest:Given Jose esperar aprender mucho de pruebas de software [Jose abrir [Jose opens the Pagina utest, Jose clicks on Boton para iniciar el registro]], When Completara el formulario completo con sus datos
+| strNombre | strApellido | strEmail | strMesNacimiento | strDiaNacimiento | strAnioNacimiento | strCiudad | strZip | strPais | strDispositivoMovil | strModeloMovil | strSistemaOperativoMovil | strClave |
+| Lionel | Messi | messi@gmail.com | December | 14 | 1987 | Bogota | 1947 | Colombia | Apple | iPhone 5S | iOS 10.11 | Pepe123 | [Jose llenar [Jose enters 'Lionel' into Nombre, Jose enters 'Messi' into Apellido, Jose enters 'messi@gmail.com' into Email]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@4cdeeeb0
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Registro de Jose en plataforma Utest:Given Jose esperar aprender mucho de pruebas de software [Jose abrir [Jose opens the Pagina utest, Jose clicks on Boton para iniciar el registro]], When Completara el formulario completo con sus datos
+| strNombre | strApellido | strEmail | strMesNacimiento | strDiaNacimiento | strAnioNacimiento | strCiudad | strZip | strPais | strDispositivoMovil | strModeloMovil | strSistemaOperativoMovil | strClave |
+| Lionel | Messi | messi@gmail.com | December | 14 | 1987 | Bogota | 1947 | Colombia | Apple | iPhone 5S | iOS 10.11 | Pepe123 | [Jose llenar [Jose enters 'Lionel' into Nombre, Jose enters 'Messi' into Apellido, Jose enters 'messi@gmail.com' into Email, Jose select December on Mes]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@286c26de
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@1931283b
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - testFinished: Registro de Jose en plataforma Utest:Given Jose esperar aprender mucho de pruebas de software [Jose abrir [Jose opens the Pagina utest, Jose clicks on Boton para iniciar el registro]], When Completara el formulario completo con sus datos
 | strNombre | strApellido | strEmail | strMesNacimiento | strDiaNacimiento | strAnioNacimiento | strCiudad | strZip | strPais | strDispositivoMovil | strModeloMovil | strSistemaOperativoMovil | strClave |
-| Lionel | Messi | messi@gmail.com | December | 14 | 1987 | Bogota | 1947 | Colombia | Apple | iPhone 5S | iOS 10.11 | Pepe123 |, Then Finaliza el registro al completar los formularios
+| Lionel | Messi | messi@gmail.com | December | 14 | 1987 | Bogota | 1947 | Colombia | Apple | iPhone 5S | iOS 10.11 | Pepe123 | [Jose llenar [Jose enters 'Lionel' into Nombre, Jose enters 'Messi' into Apellido, Jose enters 'messi@gmail.com' into Email, Jose select December on Mes, Jose select 14 on Dia]], Then Finaliza el registro al completar los formularios
 | strTextoFinal |
 | Registro completo |
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - TestOutcomes: [Registro de Jose en plataforma Utest:Given Jose esperar aprender mucho de pruebas de software [Jose abrir [Jose opens the Pagina utest, Jose clicks on Boton para iniciar el registro]], When Completara el formulario completo con sus datos
 | strNombre | strApellido | strEmail | strMesNacimiento | strDiaNacimiento | strAnioNacimiento | strCiudad | strZip | strPais | strDispositivoMovil | strModeloMovil | strSistemaOperativoMovil | strClave |
-| Lionel | Messi | messi@gmail.com | December | 14 | 1987 | Bogota | 1947 | Colombia | Apple | iPhone 5S | iOS 10.11 | Pepe123 |, Then Finaliza el registro al completar los formularios
+| Lionel | Messi | messi@gmail.com | December | 14 | 1987 | Bogota | 1947 | Colombia | Apple | iPhone 5S | iOS 10.11 | Pepe123 | [Jose llenar [Jose enters 'Lionel' into Nombre, Jose enters 'Messi' into Apellido, Jose enters 'messi@gmail.com' into Email, Jose select December on Mes, Jose select 14 on Dia]], Then Finaliza el registro al completar los formularios
 | strTextoFinal |
 | Registro completo |]
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - Final testOutcomes: [Registro de Jose en plataforma Utest:Given Jose esperar aprender mucho de pruebas de software [Jose abrir [Jose opens the Pagina utest, Jose clicks on Boton para iniciar el registro]], When Completara el formulario completo con sus datos
 | strNombre | strApellido | strEmail | strMesNacimiento | strDiaNacimiento | strAnioNacimiento | strCiudad | strZip | strPais | strDispositivoMovil | strModeloMovil | strSistemaOperativoMovil | strClave |
-| Lionel | Messi | messi@gmail.com | December | 14 | 1987 | Bogota | 1947 | Colombia | Apple | iPhone 5S | iOS 10.11 | Pepe123 |, Then Finaliza el registro al completar los formularios
+| Lionel | Messi | messi@gmail.com | December | 14 | 1987 | Bogota | 1947 | Colombia | Apple | iPhone 5S | iOS 10.11 | Pepe123 | [Jose llenar [Jose enters 'Lionel' into Nombre, Jose enters 'Messi' into Apellido, Jose enters 'messi@gmail.com' into Email, Jose select December on Mes, Jose select 14 on Dia]], Then Finaliza el registro al completar los formularios
 | strTextoFinal |
 | Registro completo |]
 [Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - 
@@ -311,10 +203,10 @@ INFORMACIÓN: Detected dialect: W3C
  (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
           \_\                                                            
 
-TEST FAILED: Registro de Jose en plataforma Utest
---------------------------------------------------------------------------
-[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - TEST FAILED AT STEP Jose clicks on Boton para iniciar el registro
-[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - Expected enabled element was not enabled
+TEST FAILED WITH ERROR: Registro de Jose en plataforma Utest
+---------------------------------------------------------------------
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - TEST FAILED AT STEP Jose select 14 on Dia
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - Cannot locate element with text: 14
 </pre>
 </span>
 </div>
@@ -326,7 +218,7 @@ TEST FAILED: Registro de Jose en plataforma Utest
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 5.2.1</a> at 28/07/2022, 3:42:09 p. m.</p>
+<a href="http://www.gradle.org">Gradle 5.2.1</a> at 28/07/2022, 4:59:15 p. m.</p>
 </div>
 </div>
 </body>
