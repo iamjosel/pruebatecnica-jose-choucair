@@ -1,13 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Registro de nuevo usuario en Utest" skipped="0" tests="1" time="35.93" timestamp="2022-07-28 04:58:34"><testcase name="Registro de Jose en plataforma Utest"><error message="Cannot locate element with text: 14&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-OPNS9OF', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.4'&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.NoSuchElementException">Cannot locate element with text: 14
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-OPNS9OF', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.4'
-Driver info: driver.version: unknown</error><system-err>Cannot locate element with text: 14
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-OPNS9OF', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.4'
-Driver info: driver.version: unknown&#13;
-co.com.choucair.prueba.tasks.Llenar.performAs(Llenar.java:28)&#13;
-co.com.prueba.jose.stepdefinitions.StepDefinitions.completaraElFormularioCompletoConSusDatos(StepDefinitions.java:32)&#13;
-cucumber.runner.Runner.runPickle(Runner.java:80)&#13;
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Registro de nuevo usuario en Utest" skipped="0" tests="1" time="80.76" timestamp="2022-07-28 05:08:01"><testcase name="Registro de Jose en plataforma Utest"><failure message="Expected responder&#10;Expected: is &lt;true&gt;&#10;     but: was &lt;false&gt;" type="java.lang.AssertionError">Expected responder
+Expected: is &lt;true&gt;
+     but: was &lt;false&gt;</failure><system-err>Expected responder
+Expected: is &lt;true&gt;
+     but: was &lt;false&gt;&#13;
+co.com.prueba.jose.stepdefinitions.StepDefinitions.finalizaElRegistroAlCompletarLosFormularios(StepDefinitions.java:38)&#13;
+✽.Finaliza el registro al completar los formularios(src/test/resources/features/registroUtest.feature:10)&#13;
 </system-err></testcase></testsuite>

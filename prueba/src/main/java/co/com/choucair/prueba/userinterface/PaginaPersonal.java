@@ -13,7 +13,7 @@ public class PaginaPersonal {
     public static final Target MES_NACIMIENTO = Target.the("Mes")
             .located(By.xpath("/html/body/ui-view/main/section/div/div[2]/div/div[2]/div/form/div[1]/div[3]/div[4]/div[2]/div/div[1]/select"));
     public static final Target DIA_NACIMIENTO = Target.the("Dia")
-            .located(By.id("birthYear"));
+            .located(By.xpath("/html/body/ui-view/main/section/div/div[2]/div/div[2]/div/form/div[1]/div[3]/div[4]/div[2]/div/div[2]/select"));
     public static final Target ANIO_NACIMIENTO = Target.the("Anio")
             .located(By.xpath("/html/body/ui-view/main/section/div/div[2]/div/div[2]/div/form/div[1]/div[3]/div[4]/div[2]/div/div[3]/select"));
     public static final Target BOTON = Target.the("Boton de siguiente")

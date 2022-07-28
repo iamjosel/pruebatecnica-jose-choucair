@@ -85,57 +85,23 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>REGISTER BASE STEP LISTENER net.thucydides.core.steps.BaseStepListener@3c2497b4
+<pre>REGISTER BASE STEP LISTENER net.thucydides.core.steps.BaseStepListener@69c8681
 
 ?[31mFailed scenarios:?[0m
 ?[31msrc/test/resources/features/registroUtest.feature:5 ?[0m# Registro de Jose en plataforma Utest
 
 1 Scenarios (?[31m1 failed?[0m)
-3 Steps (?[31m1 failed?[0m, ?[36m1 skipped?[0m, ?[32m1 passed?[0m)
-0m37,755s
+3 Steps (?[31m1 failed?[0m, ?[32m2 passed?[0m)
+1m23,841s
 
-org.openqa.selenium.NoSuchElementException: Cannot locate element with text: 14
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-OPNS9OF', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.4'
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:147)
-	at net.serenitybdd.core.pages.DropdownSelector.byVisibleText(DropdownSelector.java:19)
-	at net.serenitybdd.core.pages.WebElementFacadeImpl.selectByVisibleText(WebElementFacadeImpl.java:918)
-	at net.serenitybdd.screenplay.actions.selectactions.SelectByVisibleTextFromTarget.performAs(SelectByVisibleTextFromTarget.java:19)
-	at net.serenitybdd.screenplay.actions.selectactions.SelectByVisibleTextFromTarget$ByteBuddy$fHuoSOGO.performAs$accessor$lecjiQar(Unknown Source)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:471)
-	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:451)
-	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:424)
-	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
-	at net.serenitybdd.screenplay.actions.selectactions.SelectByVisibleTextFromTarget$ByteBuddy$fHuoSOGO.performAs(Unknown Source)
-	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
-	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
-	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
-	at co.com.choucair.prueba.tasks.Llenar.performAs(Llenar.java:28)
-	at co.com.choucair.prueba.tasks.Llenar$ByteBuddy$uRpswUjT.performAs$accessor$YDNJ4PdY(Unknown Source)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:471)
-	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:451)
-	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:424)
-	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
-	at co.com.choucair.prueba.tasks.Llenar$ByteBuddy$uRpswUjT.performAs(Unknown Source)
-	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
-	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
-	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
-	at co.com.prueba.jose.stepdefinitions.StepDefinitions.completaraElFormularioCompletoConSusDatos(StepDefinitions.java:32)
-	at ?.Completara el formulario completo con sus datos(src/test/resources/features/registroUtest.feature:7)
+java.lang.AssertionError: Expected responder
+Expected: is &lt;true&gt;
+     but: was &lt;false&gt;
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:301)
+	at co.com.prueba.jose.stepdefinitions.StepDefinitions.finalizaElRegistroAlCompletarLosFormularios(StepDefinitions.java:38)
+	at ?.Finaliza el registro al completar los formularios(src/test/resources/features/registroUtest.feature:10)
 
 </pre>
 </span>
@@ -184,7 +150,7 @@ TEST STARTED: Registro de Jose en plataforma Utest
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 5.2.1</a> at 28/07/2022, 4:59:15 p. m.</p>
+<a href="http://www.gradle.org">Gradle 5.2.1</a> at 28/07/2022, 5:09:30 p. m.</p>
 </div>
 </div>
 </body>
